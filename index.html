@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <style>
+        #gamediv{
+            border: 3px solid rgb(0, 0, 0);
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;    
+            text-align: center;
+        background-image: url(image_2023_11_05T07_09_56_680Z.png);
+   background-repeat: no-repeat;
+    color: aliceblue;
+
+        }
+
+        .choiceBtn{
+            line-height: 20px;
+            width: 150px;
+            padding: 10px;
+            border: 1px solid black;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            background-color: grey;
+            margin: 10px;
+         border-radius: 10px;
+        }
+        .choiceBtn:hover {
+            opacity: 0.8;
+            }
+            #resultTx{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: red;
+
+            }
+    </style>
+    <div id="gamediv">
+        <h1 class="gameTX" id="playerTx">Player:</h1>
+        <h1 class="gameTX"  id="computerTx">Computer:</h1>
+        <h1 class="gameTX" id="resultTx">Result:</h1>
+
+        <button class="choiceBtn">Rock</button>
+        <button  class="choiceBtn">Paper</button>
+        <button  class="choiceBtn">Scissors</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
